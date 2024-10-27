@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...          
-      - docker build -t blacklist/container-repository .
+      - docker build -t blacklist/container-repository ./blacklists
       - docker tag blacklist/container-repository:latest 869935096522.dkr.ecr.us-east-2.amazonaws.com/blacklist/container-repository:latest 
   post_build:
     commands:
