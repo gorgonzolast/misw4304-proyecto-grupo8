@@ -24,7 +24,7 @@ def test_add_email(test_client):
     )
     assert response.status_code == 201
     response_data = json.loads(response.data)
-    assert response_data["msg"] == "Email añadido a la lista negraaaaaa"
+    assert response_data["msg"] == "Email añadido a la lista negra"
 
 
 def test_add_email_no_token(test_client):
