@@ -17,7 +17,7 @@ def create():
     return add_email_to_blacklist(data, auth_header)
 
 
-# 2. Check if an email is blacklisted
+# 2. Check if an email is blacklisted or not
 @blacklist_bp.route("/blacklists/<string:email>", methods=["GET"])
 def get(email):
     auth_header = request.headers.get("Authorization")
