@@ -93,7 +93,7 @@ def add_email_to_blacklist(data, auth_header):
     db.session.commit()
 
     # Return response
-    return {"msg": "Email no añadido a la lista negra"}, 201
+    return {"msg": "Email añadido a la lista negra"}, 201
 
 
 def is_email_blacklisted(email, auth_header):
